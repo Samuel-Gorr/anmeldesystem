@@ -292,13 +292,6 @@ class RegistrationForm(FlaskForm):
     )
 
     ##### Standorte ######
-    modus = SelectField(
-        "Ich möchte in folgendem Modus an der Tagung teilnehmen:",
-        choices=[
-            ("present", "Präsenzteilnahme"),
-            ("online", "Online-Teilnahme"),
-        ],
-    )
 
     barrierefreiheit = BooleanField(
         "Ich habe spezifische Ansprüche an Barrierefreiheit."
