@@ -117,11 +117,11 @@
         <div class="panel-body">
 
           {{ checkbox(form.barrierefreiheit,'Barrierefreiheit') }}
-          Wir melden uns dann nochmal bei dir, um alles Wichtige abzusprechen. Zugang zu dieser Info hat auch erstmal nur die Hauptorga und der Finanzer der ZaPF Bochum und der ToPF.
+          Wir melden uns dann nochmal bei dir, um alles Wichtige abzusprechen. Zugang zu dieser Info hat auch erstmal nur die Hauptorga und der Finanzer der ZaPF Hamburg und der ToPF.
 
           {{ checkbox(form.notbinarytoiletten) }}
           {{ checkbox(form.notbinaryduschen) }}
-          {{ form_group(form.schlafen, 'Wir haben ca. 100 Schlafplätze zum laut wecken und 100 weitere zum leise wecken. Es kann also sein, dass du nicht das bekommst was du angegeben hast, aber wir versuchen so viel wie es geht zu berücksichtigen.')}}
+          {{ form_group(form.schlafen, 'Aufgrund der Regelungen der Stadt Hamburg ist es uns nicht gestattet in Hallen zu schlafen (Tourismusförderung). Daher werdet ihr dieses Semester in einer Jugendherberge untergebracht.')}}
           {{ checkbox(form.couchsurfing) }}
           {{ checkbox(form.privatunterkunft) }}
 
@@ -152,6 +152,7 @@
           {{ form_group(form.alkohol) }}
         </div>
       </div>
+      <!--
       <div class="panel panel-default">
         <div class="panel-heading">
           <h2 class="panel-title">Rahmenprogramm</h3>
@@ -172,6 +173,7 @@
           {{ checkbox(form.casino, 'Casinoabend') }}
         </div>
       </div>
+    -->
       <div class="panel panel-default">
           <div class="panel-heading">
             <h2 class="panel-title">Merch</h2>
