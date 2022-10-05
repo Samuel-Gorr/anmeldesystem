@@ -301,14 +301,14 @@ class RegistrationForm(FlaskForm):
         "Ich habe Eduroam (Internet-Zugangsdienst)."
     )
     
-    nrwticket = SelectField(
-        "Ich habe ein NRW-Ticket.",
-        choices=[
-            ("nein", "Nein"),
-            ("ja", "Ja"),
-            ("jaund", "Ja und ich kann in Bochum jemanden darauf mitnehmen."),
-        ],
-    )
+#    nrwticket = SelectField(
+#        "Ich habe ein NRW-Ticket.",
+#        choices=[
+#            ("nein", "Nein"),
+#            ("ja", "Ja"),
+#            ("jaund", "Ja und ich kann in Bochum jemanden darauf mitnehmen."),
+#        ],
+#    )
 
     impfstatus = SelectField(
         "Impfstatus",
