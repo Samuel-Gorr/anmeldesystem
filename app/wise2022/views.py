@@ -205,36 +205,6 @@ class RegistrationForm(FlaskForm):
         ],
     )
 
-    ##### Rahmenprogramm ####
-
-#    exkursionen = [
-#        ("egal", "Ist mir egal"),
-#        ("spaziergang", "Spaziergang um den Kemnader See mit Besuch im Botanischen Garten"),
-#        ("planetarium", "Planetariumsvorstellung (Faszinierendes Weltall) mit anschließender Erklärung der Technik"),
-#        ("lehrstuhlvorstellung", "Lehrstuhlvorstellung"),
-#        ("bergbaumuseum", "Bergbaumuseum"),
-#        ("kunsttour", "Kunsttour an der RUB"),
-#        ("stadtfuerung", "Stadtführung durch Bochum"),
-#        ("gdata", "G-Data"),
-#        ("ph1", "Platzhalter 1"),
-#        ("ph2", "Platzhalter 2"),
-#        ("keine", "Keine Exkursion"),
-#    ]
-#    exkursion1 = SelectField("Erstwunsch", choices=exkursionen)
-#    exkursion2 = SelectField("Zweitwunsch", choices=exkursionen)
-#    exkursion3 = SelectField("Drittwunsch", choices=exkursionen)
-#    exkursion4 = SelectField("Viertwunsch", choices=exkursionen)
-
-#    bierak = BooleanField(
-#        "Ich möchte am Bieraustausch AK teilnehmen (ca 5-10€)."
-#    )
-    
-#    casino = BooleanField(
-#        "Ich bringe für den Casinoabend Abendgarderobe mit (Hemd oder ähnliches reicht)"
-#    )
-
-    # alternativprogramm = BooleanField('Ich habe Interesse an einem Alternativprogramm zur Kneipentour')
-
     #### Merch #####
 
     tshirt = SelectField("T-Shirt", choices=T_SHIRT_CHOICES)
@@ -300,15 +270,6 @@ class RegistrationForm(FlaskForm):
     eduroam = BooleanField(
         "Ich habe Eduroam (Internet-Zugangsdienst)."
     )
-    
-#    nrwticket = SelectField(
-#        "Ich habe ein NRW-Ticket.",
-#        choices=[
-#            ("nein", "Nein"),
-#            ("ja", "Ja"),
-#            ("jaund", "Ja und ich kann in Bochum jemanden darauf mitnehmen."),
-#        ],
-#    )
 
     impfstatus = SelectField(
         "Impfstatus",
