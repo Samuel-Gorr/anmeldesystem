@@ -31,7 +31,11 @@ T_SHIRT_CHOICES = [
     ("s", "S"),
     ("xs", "XS"),
 ]
-
+T_SHIRT_SCHNITT_CHOICES = [
+    ("keins", "Nein, ich möchte wirklich keins"),
+    ("mens-fit", "Mens-Fit"),
+    ("ladies-fit", "Ladies-Fit"),
+]
 # Gerne auskommentierte Sachen wieder reinnehmen, falls ihr motivierter wart mit der Merchbeschaffung als wir
 
 # HOODIE_CHOICES = [
@@ -209,6 +213,7 @@ class RegistrationForm(FlaskForm):
     #### Merch #####
 
     tshirt = SelectField("T-Shirt", choices=T_SHIRT_CHOICES)
+    tshirtschnitt = SelectField("T-Shirt", choices=T_SHIRT_SCHNITT_CHOICES)
     nrtshirt = IntegerField(
         "Anzahl T-Shirts", [validators.optional()], widget=NumberInput(min=0, max=10)
     )
