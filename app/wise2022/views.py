@@ -205,6 +205,7 @@ class RegistrationForm(FlaskForm):
         ],
     )
 
+
     #### Merch #####
 
     tshirt = SelectField("T-Shirt", choices=T_SHIRT_CHOICES)
@@ -337,6 +338,9 @@ class RegistrationForm(FlaskForm):
     )
     foto = BooleanField(
         "Ich bin damit einverstanden, dass Fotos von mir gemacht werden. Diese werden evtl im Tagungsreader genutzt. und nicht für kommerzielle Zwecke verwendet."
+    )
+    akleitung = BooleanField(
+         "Ich möchte einen AK auf der ZaPF leiten."
     )
     alter = SelectField(
         "Ich bin zum Zeitpunkt der ZaPF:",
