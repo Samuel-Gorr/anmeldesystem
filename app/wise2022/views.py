@@ -277,28 +277,6 @@ class RegistrationForm(FlaskForm):
         "Ich habe Eduroam (Internet-Zugangsdienst)."
     )
 
-    impfstatus = SelectField(
-        "Impfstatus",
-        choices=[
-            ("keinfach", "ungeimpft"),
-            ("geimpft", "geimpft"),
-            ("geboostert", "geimpft und geboostert"),
-            ("genesen", "genesen"),
-            ("genimpft", "geimpft und genesen, bzw geimpft, geboostert und genesen"),
-            ("impfbefreiung", "kann mich aus medizinischen Gründen nicht impfen lassen"),
-            ("kA", "keine Angabe"),
-        ],
-    )
-
-    impfzertifikat = BooleanField(
-        "Ich werde meinen (digitalen) Impfausweis, ein Zertifikat über meine Genesung oder einen Nachweis über die Befreiung von der 2G Pflicht dabei haben und bei Bedarf vorzeigen"
-    )
-
-    coronatest = BooleanField(
-        "Ich lasse mich testen, sodass ich jeden Tag einen gültigen Test vorweisen kann."
-    )
-
-
 
     notbinarytoiletten = BooleanField(
                 "Ich möchte während der ZaPF die Möglichkeit haben nicht binär-geschlechtliche Toiletten zu verwenden"
