@@ -36,6 +36,15 @@ T_SHIRT_SCHNITT_CHOICES = [
     ("mens-fit", "Mens-Fit"),
     ("ladies-fit", "Ladies-Fit"),
 ]
+Kapuzenjacken_CHOICES= [
+    ("keins", "Nein, ich möchte keins"),
+    ("xxl", "XXL"),
+    ("xl", "XL"),
+    ("l", "L"),
+    ("m", "M"),
+    ("s", "S"),
+    ("xs", "XS"),
+]
 # Gerne auskommentierte Sachen wieder reinnehmen, falls ihr motivierter wart mit der Merchbeschaffung als wir
 
 # HOODIE_CHOICES = [
@@ -192,6 +201,10 @@ class RegistrationForm(FlaskForm):
     tshirt = SelectField("T-Shirt", choices=T_SHIRT_CHOICES)
     nrtshirt = IntegerField(
         "Anzahl T-Shirts", [validators.optional()], widget=NumberInput(min=0, max=10)
+    )
+    kapuzenjacken = SelectField("Kapuzenjacken", choices=Kapuzenjacken_CHOICES)
+    nrkaputenjacken = IntegerField(
+        "Anzahl Kapuzenjacken", [validators.optional()], widget=NumberInput(min=0, max=10)
     )
     tasse = BooleanField(
          "Ich möchte eine Tagungstasse haben."
