@@ -154,18 +154,6 @@ class RegistrationForm(FlaskForm):
             ("n.i.", "Ich habe keine."),
         ],
     )
-    anrede = SelectField(
-        "Wie möchtest du angesprochen werden?",
-        choices=[
-            ("ka", "Keine Angabe"),
-            ("er", "Er"),
-            ("sie", "Sie"),
-            ("anderes", "Sprich mich darauf an"),
-            ("aendern", "Ich möchte die Möglichkeit haben, diese Angabe während der Tagung zu ändern"),
-            ("sonstiges", "Nichts davon, ich möchte das Freitextfeld nutzen."),
-        ],
-    )
-    anrede2 = StringField("Ich möchte angesprochen werden mit:")
 
     musikwunsch = StringField("Musikwunsch")
 
