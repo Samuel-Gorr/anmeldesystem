@@ -167,17 +167,7 @@ class RegistrationForm(FlaskForm):
             ("vegan", "Vegan"),
         ],
     )
-    essensmenge = SelectField(
-        "Wieviele Brötchen würdest du morgens essen",
-        choices=[
-	    ("weniger", "Weniger!"),
-            ("eins", "Eins"),
-            ("zwei", "Zwei"),
-            ("drei", "Drei"),
-            ("mehr", "Mehr!"),
-        ],
-    )
-    allergien = StringField("Allergien oder sonstige onstige Essensformen z.B. koscher")
+    allergien = StringField("Allergien oder sonstige Essensformen z.B. koscher")
     heissgetraenk = SelectField(
         "Kaffee oder Tee?",
         choices=[
