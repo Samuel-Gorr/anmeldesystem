@@ -219,11 +219,9 @@ class RegistrationForm(FlaskForm):
         "Anreise vorraussichtlich:",
         choices=[
             ("frueher", "Ich komme früher und helfe gerne beim Aufbau."),
-            ("fr1214", "Freitag 12-14 Uhr"),
-            ("fr1416", "Freitag 14-16 Uhr"),
-            ("fr1618", "Freitag 16-18 Uhr"),
-            ("fr1820", "Freitag 18-20 Uhr"),
-            ("ende", "Später"),
+            ("fr014", "Freitag vor 14 Uhr"),
+            ("fr114", "Freitag nach 14 Uhr"),
+            ("ende", "Samstag"),
         ],
     )
 
@@ -232,14 +230,9 @@ class RegistrationForm(FlaskForm):
     abreise_zeit = SelectField(
         "Abreise vorraussichtlich:",
         choices=[
-            ("vordi", "Vor Dienstag"),
-            ("di810", "Dienstag 8-10 Uhr"),
-            ("di1012", "Dienstag 10-12 Uhr"),
-            ("di1214", "Dienstag 12-14 Uhr"),
-            ("di1416", "Dienstag 14-16 Uhr"),
-            ("di1618", "Dienstag 16-18 Uhr"),
-            ("di1820", "Dienstag 18-20 Uhr"),
-            ("ende", "Nach dem Plenum"),
+            ("vorso", "Vor Sonntag"),
+            ("di014", "Sonntag vor 14 Uhr"),
+            ("di114", "Sonntag nach 14 Uhr"),
         ],
     )
 
