@@ -269,9 +269,6 @@ class RegistrationForm(FlaskForm):
     notbinarytoiletten = BooleanField(
                 "Ich möchte während der ZaPF die Möglichkeit haben nicht binär-geschlechtliche Toiletten zu verwenden"
             )
-    notbinaryduschen = BooleanField(
-                "Ich möchte während der ZaPF die Möglichkeit haben nicht binär-geschlechtliche Duschen zu verwenden"
-            )
     schlafen = SelectField(
         "Wie möchtest du geweckt werden?",
         choices=[
