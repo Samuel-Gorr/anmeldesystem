@@ -195,6 +195,20 @@ class RegistrationForm(FlaskForm):
         ],
     )
 
+    ##### Rahmenprogramm ####
+
+    exkursionen = [
+        ("egal", "Ist mir egal"),
+        ("hamburgfuehrung", "Hamburg Führung"),
+        ("desy", "DESY Führung"),
+        ("sternenwarte", "Sternenwarte"),
+        ("lufthansa", "Lufthansa Technik"),
+        ("hafenrundfahrt", "Hafenrundfahrt (selbstzahler)"),
+    ]
+    exkursion1 = SelectField("Erstwunsch", choices=exkursionen)
+    exkursion2 = SelectField("Zweitwunsch", choices=exkursionen)
+    exkursion3 = SelectField("Drittwunsch", choices=exkursionen)
+    exkursion4 = SelectField("Viertwunsch", choices=exkursionen)
 
     #### Merch #####
 
