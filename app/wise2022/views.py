@@ -195,7 +195,7 @@ class RegistrationForm(FlaskForm):
         "Anzahl T-Shirts", [validators.optional()], widget=NumberInput(min=0, max=10)
     )
     tasse = BooleanField(
-         "Ich möchte eine Tagungstasse haben (ca 5€)."
+         "Ich möchte eine Tagungstasse haben."
     )
     nottasche = BooleanField(
          "Ich möchte KEINE Tagungstasche haben (den Inhalt kriegst du trotzdem)."
