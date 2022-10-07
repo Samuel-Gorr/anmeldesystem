@@ -177,8 +177,7 @@ class RegistrationForm(FlaskForm):
             ("mehr", "Mehr!"),
         ],
     )
-    allergien = StringField("Allergien")
-    essensformen = StringField("Sonstige Essensformen z.B. koscher") 
+    allergien = StringField("Allergien oder sonstige onstige Essensformen z.B. koscher")
     heissgetraenk = SelectField(
         "Kaffee oder Tee?",
         choices=[
