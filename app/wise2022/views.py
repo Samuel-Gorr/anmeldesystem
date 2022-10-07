@@ -190,7 +190,6 @@ class RegistrationForm(FlaskForm):
     #### Merch #####
 
     tshirt = SelectField("T-Shirt", choices=T_SHIRT_CHOICES)
-    tshirtschnitt = SelectField("T-Shirt", choices=T_SHIRT_SCHNITT_CHOICES)
     nrtshirt = IntegerField(
         "Anzahl T-Shirts", [validators.optional()], widget=NumberInput(min=0, max=10)
     )
