@@ -199,10 +199,11 @@ class RegistrationForm(FlaskForm):
 
     exkursionen = [
         ("egal", "Ist mir egal"),
-        ("hamburgfuehrung", "Hamburg Führung"),
+        ("hamburgfuehrung", "Hamburg Stadt Führung"),
         ("desy", "DESY Führung"),
         ("sternenwarte", "Sternenwarte"),
         ("lufthansa", "Lufthansa Technik"),
+        ("kunst", "Kunsthalle"),
         ("hafenrundfahrt", "Hafenrundfahrt (selbstzahler)"),
     ]
     exkursion1 = SelectField("Erstwunsch", choices=exkursionen)
