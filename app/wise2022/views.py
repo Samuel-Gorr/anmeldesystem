@@ -303,7 +303,7 @@ class RegistrationForm(FlaskForm):
         "Kommst du zum ersten mal zu einer ZaPF?",
         choices=[
             ("ja", "Ja"),
-            ("jaund", "Ja und ich hätte gerne einen ZaPF-Mentor."),
+            ("jaund", "Ja und ich hätte gerne einen ZaPF-Mentorikon."),
             ("nein", "Nein"),
         ],
     )
@@ -317,7 +317,7 @@ class RegistrationForm(FlaskForm):
          "Ich möchte einen AK auf der ZaPF leiten."
     )
     redeleitung = BooleanField(
-         "Ich möchte bei der Redeleitung der Plena mit machen."
+         "Ich möchte bei der Redeleitung der Plena mitmachen."
     )
     gremiumwahl = BooleanField(
          "Ich möchte mich in ein Gremium wählen lassen (https://zapf.wiki/Übersicht#Gremien_der_ZaPF)."
