@@ -342,19 +342,11 @@ class RegistrationForm(FlaskForm):
         widget=TextArea(),
     )
     submit = SubmitField()
-    vertrauensperson = SelectField(
-        'Wärst Du bereit, dich als Vertrauensperson aufzustellen? (Du weißt nicht was das ist? Gib bitte "Nein" an!)',
-        choices=[
-            ("nein", "Nein"),
-            ("ja", "Ja"),
-        ],
+    vertrauensperson = BooleanField(
+         "Ich möchte mich als Vertrauensperson aufstellen"
     )
-    protokoll = SelectField(
-        "Wärst Du bereit bei den Plenen Protokoll zu schreiben?",
-        choices=[
-            ("nein", "Nein"),
-            ("ja", "Ja"),
-        ],
+    protokoll = BooleanField(
+         "Ich möchte Protokoll schreiben."
     )
     ##### Datenschutz ######
 
