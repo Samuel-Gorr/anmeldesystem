@@ -336,6 +336,11 @@ class RegistrationForm(FlaskForm):
         #   gremien = BoolanField('Ich bin Mitglied in StAPF, TOPF, KommGrem, oder ZaPF-e.V-Vorstand und moechte mich über das Gremienkontingent anmelden.')
         widget=TextArea(),
     )
+    bildessen = StringField(
+        "Was ist dein Lieblingsessen? Gerne auch mit Link zu einem Bild.",
+        #   gremien = BoolanField('Ich bin Mitglied in StAPF, TOPF, KommGrem, oder ZaPF-e.V-Vorstand und moechte mich über das Gremienkontingent anmelden.')
+        widget=TextArea(),
+    )
     submit = SubmitField()
     vertrauensperson = SelectField(
         'Wärst Du bereit, dich als Vertrauensperson aufzustellen? (Du weißt nicht was das ist? Gib bitte "Nein" an!)',
