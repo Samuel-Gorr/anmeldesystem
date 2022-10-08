@@ -300,7 +300,7 @@ class RegistrationForm(FlaskForm):
 
     #### Sonstiges ####
     zaepfchen = SelectField(
-        "Kommst du zum ersten mal zu einer ZaPF?",
+        "Kommst du zum ersten Mal zu einer ZaPF?",
         choices=[
             ("ja", "Ja"),
             ("jaund", "Ja und ich hätte gerne einen ZaPF-Mentorikon."),
