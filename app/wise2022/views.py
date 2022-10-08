@@ -259,8 +259,8 @@ class RegistrationForm(FlaskForm):
         "Abreise vorraussichtlich:",
         choices=[
             ("vorso", "Vor Sonntag"),
-            ("di014", "Sonntag vor 14 Uhr"),
-            ("di114", "Sonntag nach 14 Uhr"),
+            ("so016", "Sonntag vor 16 Uhr"),
+            ("so116", "Sonntag nach 16 Uhr"),
         ],
     )
 
